@@ -1,0 +1,17 @@
+html, body {
+    touch-action: manipulation;
+    font-family: cubic11, sans-serif;
+    width: 100vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+@font-face {
+    font-family: cubic11;
+    src: url("../font/Cubic11.woff2") format('woff2');
+}

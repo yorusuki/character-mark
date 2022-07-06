@@ -1,0 +1,94 @@
+#index-title-box {
+    width: 85vw;
+    font-size: 2rem;
+    padding: 15px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+    border: dashed black;
+}
+
+#index-title-create, #index-title-adventure{
+    width: 65vw;
+    margin: 15px auto;
+    padding: 15px;
+    animation: titleOpen 1500ms;
+    animation-delay: 75ms;
+    border-radius: 10px;
+    border: dashed black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-items: center;
+}
+
+#index-title-create > h4, #index-title-adventure > h4 {
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    /* space : 0.3rem */
+    width: 5.2rem;
+    text-align: center;
+    animation: textEffect 750ms steps(4);
+    animation-delay: 75ms;
+}
+
+#index-title-about {
+    width: 35vw;
+    margin: 15px auto;
+    padding: 15px;
+    animation: titleOpen 1200ms;
+    animation-delay: 50ms;
+    border-radius: 10px;
+    border: dashed black;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-items: center;
+}
+
+#index-title-about > h4{
+    margin: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    /* space : 0.3rem */
+    width: 5.2rem;
+    text-align: center;
+    animation: textEffect 750ms steps(4);
+    animation-delay: 75ms;
+}
+
+#index-title-create:hover, #index-title-create:active, #index-title-adventure:hover, #index-title-adventure:active, #index-title-about:hover, #index-title-about:active {
+    background-color: #404543;
+    border: dashed white;
+    color: white
+}
+
+#index-title-headPic {
+    width: 35vh;
+    height: 35vh;
+    border-radius: 50%;
+    margin: 35px auto;
+}
+
+@keyframes titleOpen {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100vm;
+    }
+}
+
+@keyframes textEffect {
+    from {
+        width: 0;
+    }
+}
+
+@font-face {
+    font-family: cubic11;
+    src: url("../font/Cubic11.woff2") format('woff2');
+}
